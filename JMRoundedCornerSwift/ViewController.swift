@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello World")
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any   additional setup after loading the view, typically from a nib.
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,7 +59,7 @@ class TableViewCell: UITableViewCell {
     private func setupViews() {
         self.contentView.backgroundColor = UIColor.lightGrayColor()
         let avatarView = UIImageView.init(frame: CGRectMake(10, 7, 40, 40))
-        avatarView.image = UIImage.jm_setRadiusWith(CGSizeMake(40, 40), radius: JMRadiusMake(20, 20, 20, 20), borderColor: UIColor.redColor(), borderWidth: 0.5, backgroundColor: UIColor.blueColor(), backgroundImage: UIImage.init(named: "avatar.jpg"), contentMode: .ScaleAspectFill)
+        avatarView.jm_setRadiusWith(JMRadiusMake(20, 20, 20, 20), borderColor: nil, borderWidth: 0.0, backgroundColor: nil, backgroundImage: UIImage.init(named: "avatar.jpg"), contentMode: .ScaleAspectFill)
         self.contentView.addSubview(avatarView)
     }
 }

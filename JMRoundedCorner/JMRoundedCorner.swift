@@ -16,8 +16,64 @@ struct JMRadius {
     var bottomRightRadius: CGFloat
 }
 
+
 func JMRadiusMake(topLeftRadius: CGFloat, _ topRightRadius: CGFloat, _ bottomLeftRadius: CGFloat, _ bottomRightRadius: CGFloat) -> JMRadius {
     return JMRadius(topLeftRadius: topLeftRadius, topRightRadius: topRightRadius,bottomLeftRadius: bottomLeftRadius,bottomRightRadius: bottomRightRadius)
+}
+
+extension UIView {
+    func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode) {
+        //什么叫扭曲，下面就叫扭曲，可是我实在不知道如何实现，先这样吧
+        let radiusRect = CGRectMake(radius.topLeftRadius, radius.topRightRadius, radius.bottomLeftRadius, radius.bottomRightRadius)
+        let radiusValue = NSValue.init(CGRect: radiusRect)
+        var dic: Dictionary<String, NSObject> = [: ]
+        dic["radius"] = radiusValue
+        dic["borderColor"] = borderColor;
+        dic["borderWidth"] = borderWidth;
+        dic["backgroundColor"] = backgroundColor;
+        dic["backgroundImage"] = backgroundImage;
+        dic["contentMode"] = contentMode.rawValue
+        self.setNeedsLayout()
+        self.performSelector(#selector(setRadius(_:)), withObject: dic, afterDelay: 0, inModes: [NSRunLoopCommonModes])
+    }
+    
+    func setRadius(dic: Dictionary<String, NSObject>) {
+        if self.bounds.size.width == 0 || self.bounds.size.width == 0 {
+            print("JMRoundedCorner 可能受到某些邪恶力量的影响，没有在布局之后拿到 view 的 size （也可能这个 View 的 size 就是这个样子 -。-！），可以调用方法，- jm_setJMRadius: withBorderColor: borderWidth: backgroundColor: backgroundImage: contentMode: size: 方法给 JMRoundedCorner 提供 size");
+            return;
+        }
+        let radiusRect = (dic["radius"] as! NSValue).CGRectValue()
+        let radius = JMRadiusMake(radiusRect.origin.x, radiusRect.origin.y, radiusRect.width, radiusRect.height)
+        let contentMode = UIViewContentMode.init(rawValue: dic["contentMode"] as! Int)
+        
+        
+        self.jm_setRadiusWith(radius, borderColor: dic["borderColor"] as? UIColor, borderWidth: dic["borderWidth"] as! CGFloat, backgroundColor: dic["backgroundColor"] as? UIColor,  backgroundImage: dic["backgroundImage"] as? UIImage, contentMode: contentMode!, size: self.bounds.size)
+    }
+
+    func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode, size: CGSize) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
+            let size2 = CGSizeMake(self.pixel(size.width), self.pixel(size.height))
+            let image = UIImage.jm_setRadiusWith(size2, radius: radius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor, backgroundImage: backgroundImage, contentMode: contentMode)
+            dispatch_async(dispatch_get_main_queue(), {
+                self.frame = CGRectMake(self.pixel(self.frame.origin.x), self.pixel(self.frame.origin.y), size2.width, size2.height)
+                if self is UIImageView {
+                    (self as! UIImageView).image = image
+                } else if self is UIButton && backgroundImage != nil {
+                    (self as! UIButton) .setBackgroundImage(image, forState: .Normal)
+                } else if self is UILabel {
+                    self.layer.backgroundColor = UIColor.init(patternImage: image).CGColor
+                } else {
+                    self.layer.contents = image.CGImage
+                }
+            })
+        }
+    }
+    
+    func pixel(num: CGFloat) -> CGFloat {
+        let unit = 1.0 / UIScreen.mainScreen().scale
+        let remain = CGFloat(fmodf(Float(num), Float(unit)))
+        return num - remain + (remain >= unit / 2.0 ? unit: 0)
+    }
 }
 
 //扩展
