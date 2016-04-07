@@ -15,6 +15,22 @@
 		881444451CB358FE00F174DD /* JMRoundedCornerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881444441CB358FE00F174DD /* JMRoundedCornerSwiftTests.swift */; };
 		881444501CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814444F1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift */; };
 		881444601CB3618E00F174DD /* JMRoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814445F1CB3618E00F174DD /* JMRoundedCorner.swift */; };
+		883D26211CB63A2D0086A211 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26201CB63A2D0086A211 /* ViewController2.swift */; };
+		883D26311CB63D1A0086A211 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26231CB63D1A0086A211 /* Constraint.swift */; };
+		883D26321CB63D1A0086A211 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26241CB63D1A0086A211 /* ConstraintAttributes.swift */; };
+		883D26331CB63D1A0086A211 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26251CB63D1A0086A211 /* ConstraintDescription.swift */; };
+		883D26341CB63D1A0086A211 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26261CB63D1A0086A211 /* ConstraintItem.swift */; };
+		883D26351CB63D1A0086A211 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26271CB63D1A0086A211 /* ConstraintMaker.swift */; };
+		883D26361CB63D1A0086A211 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26281CB63D1A0086A211 /* ConstraintRelation.swift */; };
+		883D26371CB63D1A0086A211 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26291CB63D1A0086A211 /* Debugging.swift */; };
+		883D26381CB63D1A0086A211 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262A1CB63D1A0086A211 /* EdgeInsets.swift */; };
+		883D26391CB63D1A0086A211 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 883D262B1CB63D1A0086A211 /* Info.plist */; };
+		883D263A1CB63D1A0086A211 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262C1CB63D1A0086A211 /* LayoutConstraint.swift */; };
+		883D263B1CB63D1A0086A211 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262E1CB63D1A0086A211 /* SnapKit.swift */; };
+		883D263C1CB63D1A0086A211 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262F1CB63D1A0086A211 /* View+SnapKit.swift */; };
+		883D263D1CB63D1A0086A211 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26301CB63D1A0086A211 /* ViewController+SnapKit.swift */; };
+		883D263F1CB6542D0086A211 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D263E1CB6542D0086A211 /* TestViewController.swift */; };
+		883D26421CB660E50086A211 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D26411CB660E50086A211 /* UIControl+YYAdd.m */; };
 		88CC6F711CB3BA0E0009C91F /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88CC6F701CB3BA0E0009C91F /* avatar.jpg */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +66,25 @@
 		8814444F1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMRoundedCornerSwiftUITests.swift; sourceTree = "<group>"; };
 		881444511CB358FE00F174DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8814445F1CB3618E00F174DD /* JMRoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JMRoundedCorner.swift; path = JMRoundedCorner/JMRoundedCorner.swift; sourceTree = SOURCE_ROOT; };
+		883D26201CB63A2D0086A211 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		883D26231CB63D1A0086A211 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		883D26241CB63D1A0086A211 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		883D26251CB63D1A0086A211 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		883D26261CB63D1A0086A211 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		883D26271CB63D1A0086A211 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		883D26281CB63D1A0086A211 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		883D26291CB63D1A0086A211 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		883D262A1CB63D1A0086A211 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		883D262B1CB63D1A0086A211 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883D262C1CB63D1A0086A211 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		883D262D1CB63D1A0086A211 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		883D262E1CB63D1A0086A211 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		883D262F1CB63D1A0086A211 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		883D26301CB63D1A0086A211 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		883D263E1CB6542D0086A211 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		883D26401CB660E50086A211 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
+		883D26411CB660E50086A211 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		883D26431CB6649E0086A211 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		88CC6F701CB3BA0E0009C91F /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +116,8 @@
 		881444231CB358FE00F174DD = {
 			isa = PBXGroup;
 			children = (
+				883D26221CB63D1A0086A211 /* Source */,
+				883D261D1CB638520086A211 /* JMRoundedCorner */,
 				8814442E1CB358FE00F174DD /* JMRoundedCornerSwift */,
 				881444431CB358FE00F174DD /* JMRoundedCornerSwiftTests */,
 				8814444E1CB358FE00F174DD /* JMRoundedCornerSwiftUITests */,
@@ -101,9 +138,13 @@
 		8814442E1CB358FE00F174DD /* JMRoundedCornerSwift */ = {
 			isa = PBXGroup;
 			children = (
+				883D26401CB660E50086A211 /* UIControl+YYAdd.h */,
+				883D26411CB660E50086A211 /* UIControl+YYAdd.m */,
+				883D26431CB6649E0086A211 /* Bridging-Header.h */,
 				8814442F1CB358FE00F174DD /* AppDelegate.swift */,
-				8814445F1CB3618E00F174DD /* JMRoundedCorner.swift */,
 				881444311CB358FE00F174DD /* ViewController.swift */,
+				883D26201CB63A2D0086A211 /* ViewController2.swift */,
+				883D263E1CB6542D0086A211 /* TestViewController.swift */,
 				88CC6F701CB3BA0E0009C91F /* avatar.jpg */,
 				881444331CB358FE00F174DD /* Main.storyboard */,
 				881444361CB358FE00F174DD /* Assets.xcassets */,
@@ -129,6 +170,36 @@
 				881444511CB358FE00F174DD /* Info.plist */,
 			);
 			path = JMRoundedCornerSwiftUITests;
+			sourceTree = "<group>";
+		};
+		883D261D1CB638520086A211 /* JMRoundedCorner */ = {
+			isa = PBXGroup;
+			children = (
+				8814445F1CB3618E00F174DD /* JMRoundedCorner.swift */,
+			);
+			name = JMRoundedCorner;
+			path = JMRoundedCornerSwift;
+			sourceTree = "<group>";
+		};
+		883D26221CB63D1A0086A211 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				883D26231CB63D1A0086A211 /* Constraint.swift */,
+				883D26241CB63D1A0086A211 /* ConstraintAttributes.swift */,
+				883D26251CB63D1A0086A211 /* ConstraintDescription.swift */,
+				883D26261CB63D1A0086A211 /* ConstraintItem.swift */,
+				883D26271CB63D1A0086A211 /* ConstraintMaker.swift */,
+				883D26281CB63D1A0086A211 /* ConstraintRelation.swift */,
+				883D26291CB63D1A0086A211 /* Debugging.swift */,
+				883D262A1CB63D1A0086A211 /* EdgeInsets.swift */,
+				883D262B1CB63D1A0086A211 /* Info.plist */,
+				883D262C1CB63D1A0086A211 /* LayoutConstraint.swift */,
+				883D262D1CB63D1A0086A211 /* SnapKit.h */,
+				883D262E1CB63D1A0086A211 /* SnapKit.swift */,
+				883D262F1CB63D1A0086A211 /* View+SnapKit.swift */,
+				883D26301CB63D1A0086A211 /* ViewController+SnapKit.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +309,7 @@
 				88CC6F711CB3BA0E0009C91F /* avatar.jpg in Resources */,
 				8814443A1CB358FE00F174DD /* LaunchScreen.storyboard in Resources */,
 				881444371CB358FE00F174DD /* Assets.xcassets in Resources */,
+				883D26391CB63D1A0086A211 /* Info.plist in Resources */,
 				881444351CB358FE00F174DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,8 +335,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883D263A1CB63D1A0086A211 /* LayoutConstraint.swift in Sources */,
 				881444601CB3618E00F174DD /* JMRoundedCorner.swift in Sources */,
+				883D263F1CB6542D0086A211 /* TestViewController.swift in Sources */,
+				883D26421CB660E50086A211 /* UIControl+YYAdd.m in Sources */,
+				883D26211CB63A2D0086A211 /* ViewController2.swift in Sources */,
+				883D26381CB63D1A0086A211 /* EdgeInsets.swift in Sources */,
+				883D26351CB63D1A0086A211 /* ConstraintMaker.swift in Sources */,
 				881444321CB358FE00F174DD /* ViewController.swift in Sources */,
+				883D263B1CB63D1A0086A211 /* SnapKit.swift in Sources */,
+				883D26371CB63D1A0086A211 /* Debugging.swift in Sources */,
+				883D26341CB63D1A0086A211 /* ConstraintItem.swift in Sources */,
+				883D26321CB63D1A0086A211 /* ConstraintAttributes.swift in Sources */,
+				883D26361CB63D1A0086A211 /* ConstraintRelation.swift in Sources */,
+				883D263D1CB63D1A0086A211 /* ViewController+SnapKit.swift in Sources */,
+				883D263C1CB63D1A0086A211 /* View+SnapKit.swift in Sources */,
+				883D26311CB63D1A0086A211 /* Constraint.swift in Sources */,
+				883D26331CB63D1A0086A211 /* ConstraintDescription.swift in Sources */,
 				881444301CB358FE00F174DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JMRoundedCornerSwift/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -422,6 +510,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JMRoundedCornerSwift/Bridging-Header.h";
 			};
 			name = Release;
 		};
