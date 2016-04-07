@@ -148,7 +148,6 @@ extension UIImage {
         CGContextAddArcToPoint(context, width - halfBorderWidth, halfBorderWidth, width - halfBorderWidth, height / 2, radius.topRightRadius)// 右上角
         CGContextDrawPath(context, .FillStroke) //根据坐标绘制路径
         
-        
         let outImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return outImage

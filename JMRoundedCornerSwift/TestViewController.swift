@@ -54,7 +54,7 @@ class TestViewController: UIViewController {
         
         slider4 = UISlider.init(frame: CGRectMake(20, 560, 300, 20))
         slider4.minimumValue = 0;
-        slider4.maximumValue = 100;
+        slider4.maximumValue = 30;
         slider4.value = 10;
         view.addSubview(slider4)
         
@@ -86,6 +86,7 @@ class TestViewController: UIViewController {
     }
     
     func change() {
+        
         imageView.JMRadiusWith(JMRadiusMake(CGFloat(slider0.value), CGFloat(slider1.value), CGFloat(slider2.value), CGFloat(slider3.value)), borderColor:UIColor.redColor(), borderWidth: CGFloat(slider4.value), backgroundColor: nil, backgroundImage: UIImage.init(named: "avatar.jpg"), contentMode: .ScaleAspectFill)
     }
 }
