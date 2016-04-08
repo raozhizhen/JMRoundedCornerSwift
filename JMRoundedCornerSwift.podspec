@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/raozhizhen/JMRoundedCornerSwift.git"
   s.license             = { :type => "MIT", :file => "LICENSE" } 
   s.author       = { "raozhizhen" => "raozhizhen@gmail.com" }
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/raozhizhen/JMRoundedCornerSwift.git", :tag => s.version }
   s.source_files = 'JMRoundedCorner/*.swift'
   s.requires_arc = true

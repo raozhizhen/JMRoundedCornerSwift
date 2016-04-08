@@ -79,7 +79,6 @@ extension UIView {
         let radius = JMRadiusMake(radiusRect.origin.x, radiusRect.origin.y, radiusRect.width, radiusRect.height)
         let contentMode = UIViewContentMode.init(rawValue: dic["contentMode"] as! Int)
         
-        
         jm_setRadiusWith(radius, borderColor: dic["borderColor"] as? UIColor, borderWidth: dic["borderWidth"] as! CGFloat, backgroundColor: dic["backgroundColor"] as? UIColor,  backgroundImage: dic["backgroundImage"] as? UIImage, contentMode: contentMode!, size: bounds.size)
     }
 
@@ -239,14 +238,14 @@ extension UIImage {
 private func transformationJMRadius(radius: JMRadius, size: CGSize, borderWidth: CGFloat) -> JMRadius{
     
     var radius = radius
-    radius.topLeftRadius = minimum(size.width - borderWidth, b: size.height - borderWidth, c: radius.topLeftRadius - borderWidth / 2)
-    radius.topRightRadius = minimum(size.width - borderWidth - radius.topLeftRadius, b: size.height - borderWidth, c: radius.topRightRadius - borderWidth / 2)
-    radius.bottomLeftRadius = minimum(size.width - borderWidth, b: size.height - borderWidth - radius.topLeftRadius, c: radius.bottomLeftRadius - borderWidth / 2)
-    radius.bottomRightRadius = minimum(size.width - borderWidth - radius.bottomLeftRadius, b: size.height - borderWidth - radius.topRightRadius, c: radius.bottomRightRadius - borderWidth / 2)
+    radius.topLeftRadius = minimum(size.width - borderWidth, size.height - borderWidth, radius.topLeftRadius - borderWidth / 2)
+    radius.topRightRadius = minimum(size.width - borderWidth - radius.topLeftRadius, size.height - borderWidth, radius.topRightRadius - borderWidth / 2)
+    radius.bottomLeftRadius = minimum(size.width - borderWidth, size.height - borderWidth - radius.topLeftRadius, radius.bottomLeftRadius - borderWidth / 2)
+    radius.bottomRightRadius = minimum(size.width - borderWidth - radius.bottomLeftRadius, size.height - borderWidth - radius.topRightRadius, radius.bottomRightRadius - borderWidth / 2)
     return radius
 }
 
-private func minimum(a: CGFloat, b: CGFloat, c: CGFloat) -> CGFloat {
+private func minimum(a: CGFloat, _ b: CGFloat, _ c: CGFloat) -> CGFloat {
     
     return max(min(min(a, b), c), 0)
 }
