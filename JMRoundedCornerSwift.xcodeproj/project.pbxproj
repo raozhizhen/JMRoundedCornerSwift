@@ -7,103 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		881444301CB358FE00F174DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814442F1CB358FE00F174DD /* AppDelegate.swift */; };
-		881444321CB358FE00F174DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881444311CB358FE00F174DD /* ViewController.swift */; };
-		881444351CB358FE00F174DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881444331CB358FE00F174DD /* Main.storyboard */; };
-		881444371CB358FE00F174DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881444361CB358FE00F174DD /* Assets.xcassets */; };
-		8814443A1CB358FE00F174DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881444381CB358FE00F174DD /* LaunchScreen.storyboard */; };
-		881444451CB358FE00F174DD /* JMRoundedCornerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881444441CB358FE00F174DD /* JMRoundedCornerSwiftTests.swift */; };
-		881444501CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814444F1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift */; };
-		881444601CB3618E00F174DD /* JMRoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814445F1CB3618E00F174DD /* JMRoundedCorner.swift */; };
-		883D26211CB63A2D0086A211 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26201CB63A2D0086A211 /* ViewController2.swift */; };
-		883D26311CB63D1A0086A211 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26231CB63D1A0086A211 /* Constraint.swift */; };
-		883D26321CB63D1A0086A211 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26241CB63D1A0086A211 /* ConstraintAttributes.swift */; };
-		883D26331CB63D1A0086A211 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26251CB63D1A0086A211 /* ConstraintDescription.swift */; };
-		883D26341CB63D1A0086A211 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26261CB63D1A0086A211 /* ConstraintItem.swift */; };
-		883D26351CB63D1A0086A211 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26271CB63D1A0086A211 /* ConstraintMaker.swift */; };
-		883D26361CB63D1A0086A211 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26281CB63D1A0086A211 /* ConstraintRelation.swift */; };
-		883D26371CB63D1A0086A211 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26291CB63D1A0086A211 /* Debugging.swift */; };
-		883D26381CB63D1A0086A211 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262A1CB63D1A0086A211 /* EdgeInsets.swift */; };
-		883D26391CB63D1A0086A211 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 883D262B1CB63D1A0086A211 /* Info.plist */; };
-		883D263A1CB63D1A0086A211 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262C1CB63D1A0086A211 /* LayoutConstraint.swift */; };
-		883D263B1CB63D1A0086A211 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262E1CB63D1A0086A211 /* SnapKit.swift */; };
-		883D263C1CB63D1A0086A211 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D262F1CB63D1A0086A211 /* View+SnapKit.swift */; };
-		883D263D1CB63D1A0086A211 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D26301CB63D1A0086A211 /* ViewController+SnapKit.swift */; };
-		883D263F1CB6542D0086A211 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883D263E1CB6542D0086A211 /* TestViewController.swift */; };
-		883D26421CB660E50086A211 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 883D26411CB660E50086A211 /* UIControl+YYAdd.m */; };
-		88CC6F711CB3BA0E0009C91F /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88CC6F701CB3BA0E0009C91F /* avatar.jpg */; };
+		88D93F521CBA5D1C00FFC981 /* JMRoundedCornerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D93F511CBA5D1C00FFC981 /* JMRoundedCornerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88D93F591CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D93F4E1CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework */; };
+		88D93F5E1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93F5D1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.swift */; };
+		88D93F691CBA5D4C00FFC981 /* JMRoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93F681CBA5D4C00FFC981 /* JMRoundedCorner.swift */; };
+		88D93FBC1CBAA34E00FFC981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FBB1CBAA34E00FFC981 /* AppDelegate.swift */; };
+		88D93FC11CBAA34E00FFC981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D93FBF1CBAA34E00FFC981 /* Main.storyboard */; };
+		88D93FC31CBAA34E00FFC981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D93FC21CBAA34E00FFC981 /* Assets.xcassets */; };
+		88D93FC61CBAA34E00FFC981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D93FC41CBAA34E00FFC981 /* LaunchScreen.storyboard */; };
+		88D93FD11CBAA34E00FFC981 /* JMRoundedCornerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FD01CBAA34E00FFC981 /* JMRoundedCornerDemoTests.swift */; };
+		88D93FDC1CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FDB1CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.swift */; };
+		88D93FEE1CBAA3A400FFC981 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FE91CBAA3A400FFC981 /* TestViewController.swift */; };
+		88D93FEF1CBAA3A400FFC981 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FEB1CBAA3A400FFC981 /* UIControl+YYAdd.m */; };
+		88D93FF01CBAA3A400FFC981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FEC1CBAA3A400FFC981 /* ViewController.swift */; };
+		88D93FF11CBAA3A400FFC981 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FED1CBAA3A400FFC981 /* ViewController2.swift */; };
+		88D940011CBAA51300FFC981 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FF31CBAA51300FFC981 /* Constraint.swift */; };
+		88D940021CBAA51300FFC981 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FF41CBAA51300FFC981 /* ConstraintAttributes.swift */; };
+		88D940031CBAA51300FFC981 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FF51CBAA51300FFC981 /* ConstraintDescription.swift */; };
+		88D940041CBAA51300FFC981 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FF61CBAA51300FFC981 /* ConstraintItem.swift */; };
+		88D940051CBAA51300FFC981 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FF71CBAA51300FFC981 /* ConstraintMaker.swift */; };
+		88D940061CBAA51300FFC981 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FF81CBAA51300FFC981 /* ConstraintRelation.swift */; };
+		88D940071CBAA51300FFC981 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FF91CBAA51300FFC981 /* Debugging.swift */; };
+		88D940081CBAA51300FFC981 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FFA1CBAA51300FFC981 /* EdgeInsets.swift */; };
+		88D940091CBAA51300FFC981 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88D93FFB1CBAA51300FFC981 /* Info.plist */; };
+		88D9400A1CBAA51300FFC981 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FFC1CBAA51300FFC981 /* LayoutConstraint.swift */; };
+		88D9400B1CBAA51300FFC981 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FFE1CBAA51300FFC981 /* SnapKit.swift */; };
+		88D9400C1CBAA51300FFC981 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93FFF1CBAA51300FFC981 /* View+SnapKit.swift */; };
+		88D9400D1CBAA51300FFC981 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D940001CBAA51300FFC981 /* ViewController+SnapKit.swift */; };
+		88D940321CBAA6C000FFC981 /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D940311CBAA6C000FFC981 /* avatar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		881444411CB358FE00F174DD /* PBXContainerItemProxy */ = {
+		88D93F5A1CBA5D1C00FFC981 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 881444241CB358FE00F174DD /* Project object */;
+			containerPortal = 88D93F451CBA5D1C00FFC981 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8814442B1CB358FE00F174DD;
+			remoteGlobalIDString = 88D93F4D1CBA5D1C00FFC981;
 			remoteInfo = JMRoundedCornerSwift;
 		};
-		8814444C1CB358FE00F174DD /* PBXContainerItemProxy */ = {
+		88D93FCD1CBAA34E00FFC981 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 881444241CB358FE00F174DD /* Project object */;
+			containerPortal = 88D93F451CBA5D1C00FFC981 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8814442B1CB358FE00F174DD;
-			remoteInfo = JMRoundedCornerSwift;
+			remoteGlobalIDString = 88D93FB81CBAA34E00FFC981;
+			remoteInfo = JMRoundedCornerDemo;
+		};
+		88D93FD81CBAA34E00FFC981 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88D93F451CBA5D1C00FFC981 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88D93FB81CBAA34E00FFC981;
+			remoteInfo = JMRoundedCornerDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8814442C1CB358FE00F174DD /* JMRoundedCornerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMRoundedCornerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8814442F1CB358FE00F174DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		881444311CB358FE00F174DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		881444341CB358FE00F174DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		881444361CB358FE00F174DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		881444391CB358FE00F174DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8814443B1CB358FE00F174DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		881444401CB358FE00F174DD /* JMRoundedCornerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMRoundedCornerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		881444441CB358FE00F174DD /* JMRoundedCornerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMRoundedCornerSwiftTests.swift; sourceTree = "<group>"; };
-		881444461CB358FE00F174DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8814444B1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMRoundedCornerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8814444F1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMRoundedCornerSwiftUITests.swift; sourceTree = "<group>"; };
-		881444511CB358FE00F174DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8814445F1CB3618E00F174DD /* JMRoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JMRoundedCorner.swift; path = JMRoundedCorner/JMRoundedCorner.swift; sourceTree = SOURCE_ROOT; };
-		883D26201CB63A2D0086A211 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		883D26231CB63D1A0086A211 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
-		883D26241CB63D1A0086A211 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
-		883D26251CB63D1A0086A211 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
-		883D26261CB63D1A0086A211 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
-		883D26271CB63D1A0086A211 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
-		883D26281CB63D1A0086A211 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
-		883D26291CB63D1A0086A211 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
-		883D262A1CB63D1A0086A211 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
-		883D262B1CB63D1A0086A211 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		883D262C1CB63D1A0086A211 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
-		883D262D1CB63D1A0086A211 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
-		883D262E1CB63D1A0086A211 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
-		883D262F1CB63D1A0086A211 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
-		883D26301CB63D1A0086A211 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
-		883D263E1CB6542D0086A211 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		883D26401CB660E50086A211 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
-		883D26411CB660E50086A211 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
-		883D26431CB6649E0086A211 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		88CC6F701CB3BA0E0009C91F /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		88D93F4E1CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JMRoundedCornerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D93F511CBA5D1C00FFC981 /* JMRoundedCornerSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMRoundedCornerSwift.h; sourceTree = "<group>"; };
+		88D93F531CBA5D1C00FFC981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D93F581CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMRoundedCornerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D93F5D1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMRoundedCornerSwiftTests.swift; sourceTree = "<group>"; };
+		88D93F5F1CBA5D1C00FFC981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D93F681CBA5D4C00FFC981 /* JMRoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMRoundedCorner.swift; sourceTree = "<group>"; };
+		88D93FB91CBAA34E00FFC981 /* JMRoundedCornerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMRoundedCornerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D93FBB1CBAA34E00FFC981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88D93FC01CBAA34E00FFC981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88D93FC21CBAA34E00FFC981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88D93FC51CBAA34E00FFC981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88D93FC71CBAA34E00FFC981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D93FCC1CBAA34E00FFC981 /* JMRoundedCornerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMRoundedCornerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D93FD01CBAA34E00FFC981 /* JMRoundedCornerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMRoundedCornerDemoTests.swift; sourceTree = "<group>"; };
+		88D93FD21CBAA34E00FFC981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D93FD71CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMRoundedCornerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D93FDB1CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMRoundedCornerDemoUITests.swift; sourceTree = "<group>"; };
+		88D93FDD1CBAA34E00FFC981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D93FE81CBAA3A400FFC981 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		88D93FE91CBAA3A400FFC981 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		88D93FEA1CBAA3A400FFC981 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
+		88D93FEB1CBAA3A400FFC981 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		88D93FEC1CBAA3A400FFC981 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88D93FED1CBAA3A400FFC981 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		88D93FF31CBAA51300FFC981 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		88D93FF41CBAA51300FFC981 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		88D93FF51CBAA51300FFC981 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		88D93FF61CBAA51300FFC981 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		88D93FF71CBAA51300FFC981 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		88D93FF81CBAA51300FFC981 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		88D93FF91CBAA51300FFC981 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		88D93FFA1CBAA51300FFC981 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		88D93FFB1CBAA51300FFC981 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D93FFC1CBAA51300FFC981 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		88D93FFE1CBAA51300FFC981 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		88D93FFF1CBAA51300FFC981 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		88D940001CBAA51300FFC981 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
+		88D940311CBAA6C000FFC981 /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		881444291CB358FE00F174DD /* Frameworks */ = {
+		88D93F4A1CBA5D1C00FFC981 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8814443D1CB358FE00F174DD /* Frameworks */ = {
+		88D93F551CBA5D1C00FFC981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D93F591CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D93FB61CBAA34E00FFC981 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		881444481CB358FE00F174DD /* Frameworks */ = {
+		88D93FC91CBAA34E00FFC981 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D93FD41CBAA34E00FFC981 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -113,105 +143,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		881444231CB358FE00F174DD = {
+		88D93F441CBA5D1C00FFC981 = {
 			isa = PBXGroup;
 			children = (
-				883D26221CB63D1A0086A211 /* Source */,
-				883D261D1CB638520086A211 /* JMRoundedCorner */,
-				8814442E1CB358FE00F174DD /* JMRoundedCornerSwift */,
-				881444431CB358FE00F174DD /* JMRoundedCornerSwiftTests */,
-				8814444E1CB358FE00F174DD /* JMRoundedCornerSwiftUITests */,
-				8814442D1CB358FE00F174DD /* Products */,
+				88D93F501CBA5D1C00FFC981 /* JMRoundedCornerSwift */,
+				88D93F5C1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests */,
+				88D93FBA1CBAA34E00FFC981 /* JMRoundedCornerDemo */,
+				88D93FCF1CBAA34E00FFC981 /* JMRoundedCornerDemoTests */,
+				88D93FDA1CBAA34E00FFC981 /* JMRoundedCornerDemoUITests */,
+				88D93F4F1CBA5D1C00FFC981 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8814442D1CB358FE00F174DD /* Products */ = {
+		88D93F4F1CBA5D1C00FFC981 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8814442C1CB358FE00F174DD /* JMRoundedCornerSwift.app */,
-				881444401CB358FE00F174DD /* JMRoundedCornerSwiftTests.xctest */,
-				8814444B1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.xctest */,
+				88D93F4E1CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework */,
+				88D93F581CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.xctest */,
+				88D93FB91CBAA34E00FFC981 /* JMRoundedCornerDemo.app */,
+				88D93FCC1CBAA34E00FFC981 /* JMRoundedCornerDemoTests.xctest */,
+				88D93FD71CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8814442E1CB358FE00F174DD /* JMRoundedCornerSwift */ = {
+		88D93F501CBA5D1C00FFC981 /* JMRoundedCornerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				883D26401CB660E50086A211 /* UIControl+YYAdd.h */,
-				883D26411CB660E50086A211 /* UIControl+YYAdd.m */,
-				883D26431CB6649E0086A211 /* Bridging-Header.h */,
-				8814442F1CB358FE00F174DD /* AppDelegate.swift */,
-				881444311CB358FE00F174DD /* ViewController.swift */,
-				883D26201CB63A2D0086A211 /* ViewController2.swift */,
-				883D263E1CB6542D0086A211 /* TestViewController.swift */,
-				88CC6F701CB3BA0E0009C91F /* avatar.jpg */,
-				881444331CB358FE00F174DD /* Main.storyboard */,
-				881444361CB358FE00F174DD /* Assets.xcassets */,
-				881444381CB358FE00F174DD /* LaunchScreen.storyboard */,
-				8814443B1CB358FE00F174DD /* Info.plist */,
+				88D93F681CBA5D4C00FFC981 /* JMRoundedCorner.swift */,
+				88D93F511CBA5D1C00FFC981 /* JMRoundedCornerSwift.h */,
+				88D93F531CBA5D1C00FFC981 /* Info.plist */,
 			);
 			path = JMRoundedCornerSwift;
 			sourceTree = "<group>";
 		};
-		881444431CB358FE00F174DD /* JMRoundedCornerSwiftTests */ = {
+		88D93F5C1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				881444441CB358FE00F174DD /* JMRoundedCornerSwiftTests.swift */,
-				881444461CB358FE00F174DD /* Info.plist */,
+				88D93F5D1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.swift */,
+				88D93F5F1CBA5D1C00FFC981 /* Info.plist */,
 			);
 			path = JMRoundedCornerSwiftTests;
 			sourceTree = "<group>";
 		};
-		8814444E1CB358FE00F174DD /* JMRoundedCornerSwiftUITests */ = {
+		88D93FBA1CBAA34E00FFC981 /* JMRoundedCornerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8814444F1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift */,
-				881444511CB358FE00F174DD /* Info.plist */,
+				88D93FF21CBAA51300FFC981 /* Source */,
+				88D93FBB1CBAA34E00FFC981 /* AppDelegate.swift */,
+				88D93FE81CBAA3A400FFC981 /* Bridging-Header.h */,
+				88D93FE91CBAA3A400FFC981 /* TestViewController.swift */,
+				88D93FEA1CBAA3A400FFC981 /* UIControl+YYAdd.h */,
+				88D93FEB1CBAA3A400FFC981 /* UIControl+YYAdd.m */,
+				88D93FEC1CBAA3A400FFC981 /* ViewController.swift */,
+				88D93FED1CBAA3A400FFC981 /* ViewController2.swift */,
+				88D940311CBAA6C000FFC981 /* avatar.jpg */,
+				88D93FBF1CBAA34E00FFC981 /* Main.storyboard */,
+				88D93FC21CBAA34E00FFC981 /* Assets.xcassets */,
+				88D93FC41CBAA34E00FFC981 /* LaunchScreen.storyboard */,
+				88D93FC71CBAA34E00FFC981 /* Info.plist */,
 			);
-			path = JMRoundedCornerSwiftUITests;
+			path = JMRoundedCornerDemo;
 			sourceTree = "<group>";
 		};
-		883D261D1CB638520086A211 /* JMRoundedCorner */ = {
+		88D93FCF1CBAA34E00FFC981 /* JMRoundedCornerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				8814445F1CB3618E00F174DD /* JMRoundedCorner.swift */,
+				88D93FD01CBAA34E00FFC981 /* JMRoundedCornerDemoTests.swift */,
+				88D93FD21CBAA34E00FFC981 /* Info.plist */,
 			);
-			name = JMRoundedCorner;
-			path = JMRoundedCornerSwift;
+			path = JMRoundedCornerDemoTests;
 			sourceTree = "<group>";
 		};
-		883D26221CB63D1A0086A211 /* Source */ = {
+		88D93FDA1CBAA34E00FFC981 /* JMRoundedCornerDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				883D26231CB63D1A0086A211 /* Constraint.swift */,
-				883D26241CB63D1A0086A211 /* ConstraintAttributes.swift */,
-				883D26251CB63D1A0086A211 /* ConstraintDescription.swift */,
-				883D26261CB63D1A0086A211 /* ConstraintItem.swift */,
-				883D26271CB63D1A0086A211 /* ConstraintMaker.swift */,
-				883D26281CB63D1A0086A211 /* ConstraintRelation.swift */,
-				883D26291CB63D1A0086A211 /* Debugging.swift */,
-				883D262A1CB63D1A0086A211 /* EdgeInsets.swift */,
-				883D262B1CB63D1A0086A211 /* Info.plist */,
-				883D262C1CB63D1A0086A211 /* LayoutConstraint.swift */,
-				883D262D1CB63D1A0086A211 /* SnapKit.h */,
-				883D262E1CB63D1A0086A211 /* SnapKit.swift */,
-				883D262F1CB63D1A0086A211 /* View+SnapKit.swift */,
-				883D26301CB63D1A0086A211 /* ViewController+SnapKit.swift */,
+				88D93FDB1CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.swift */,
+				88D93FDD1CBAA34E00FFC981 /* Info.plist */,
+			);
+			path = JMRoundedCornerDemoUITests;
+			sourceTree = "<group>";
+		};
+		88D93FF21CBAA51300FFC981 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				88D93FF31CBAA51300FFC981 /* Constraint.swift */,
+				88D93FF41CBAA51300FFC981 /* ConstraintAttributes.swift */,
+				88D93FF51CBAA51300FFC981 /* ConstraintDescription.swift */,
+				88D93FF61CBAA51300FFC981 /* ConstraintItem.swift */,
+				88D93FF71CBAA51300FFC981 /* ConstraintMaker.swift */,
+				88D93FF81CBAA51300FFC981 /* ConstraintRelation.swift */,
+				88D93FF91CBAA51300FFC981 /* Debugging.swift */,
+				88D93FFA1CBAA51300FFC981 /* EdgeInsets.swift */,
+				88D93FFB1CBAA51300FFC981 /* Info.plist */,
+				88D93FFC1CBAA51300FFC981 /* LayoutConstraint.swift */,
+				88D93FFE1CBAA51300FFC981 /* SnapKit.swift */,
+				88D93FFF1CBAA51300FFC981 /* View+SnapKit.swift */,
+				88D940001CBAA51300FFC981 /* ViewController+SnapKit.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		88D93F4B1CBA5D1C00FFC981 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D93F521CBA5D1C00FFC981 /* JMRoundedCornerSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		8814442B1CB358FE00F174DD /* JMRoundedCornerSwift */ = {
+		88D93F4D1CBA5D1C00FFC981 /* JMRoundedCornerSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 881444541CB358FE00F174DD /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwift" */;
+			buildConfigurationList = 88D93F621CBA5D1C00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwift" */;
 			buildPhases = (
-				881444281CB358FE00F174DD /* Sources */,
-				881444291CB358FE00F174DD /* Frameworks */,
-				8814442A1CB358FE00F174DD /* Resources */,
+				88D93F491CBA5D1C00FFC981 /* Sources */,
+				88D93F4A1CBA5D1C00FFC981 /* Frameworks */,
+				88D93F4B1CBA5D1C00FFC981 /* Headers */,
+				88D93F4C1CBA5D1C00FFC981 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -219,69 +273,110 @@
 			);
 			name = JMRoundedCornerSwift;
 			productName = JMRoundedCornerSwift;
-			productReference = 8814442C1CB358FE00F174DD /* JMRoundedCornerSwift.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 88D93F4E1CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		8814443F1CB358FE00F174DD /* JMRoundedCornerSwiftTests */ = {
+		88D93F571CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 881444571CB358FE00F174DD /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwiftTests" */;
+			buildConfigurationList = 88D93F651CBA5D1C00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwiftTests" */;
 			buildPhases = (
-				8814443C1CB358FE00F174DD /* Sources */,
-				8814443D1CB358FE00F174DD /* Frameworks */,
-				8814443E1CB358FE00F174DD /* Resources */,
+				88D93F541CBA5D1C00FFC981 /* Sources */,
+				88D93F551CBA5D1C00FFC981 /* Frameworks */,
+				88D93F561CBA5D1C00FFC981 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				881444421CB358FE00F174DD /* PBXTargetDependency */,
+				88D93F5B1CBA5D1C00FFC981 /* PBXTargetDependency */,
 			);
 			name = JMRoundedCornerSwiftTests;
 			productName = JMRoundedCornerSwiftTests;
-			productReference = 881444401CB358FE00F174DD /* JMRoundedCornerSwiftTests.xctest */;
+			productReference = 88D93F581CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8814444A1CB358FE00F174DD /* JMRoundedCornerSwiftUITests */ = {
+		88D93FB81CBAA34E00FFC981 /* JMRoundedCornerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8814445A1CB358FE00F174DD /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwiftUITests" */;
+			buildConfigurationList = 88D93FE41CBAA34E00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerDemo" */;
 			buildPhases = (
-				881444471CB358FE00F174DD /* Sources */,
-				881444481CB358FE00F174DD /* Frameworks */,
-				881444491CB358FE00F174DD /* Resources */,
+				88D93FB51CBAA34E00FFC981 /* Sources */,
+				88D93FB61CBAA34E00FFC981 /* Frameworks */,
+				88D93FB71CBAA34E00FFC981 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8814444D1CB358FE00F174DD /* PBXTargetDependency */,
 			);
-			name = JMRoundedCornerSwiftUITests;
-			productName = JMRoundedCornerSwiftUITests;
-			productReference = 8814444B1CB358FE00F174DD /* JMRoundedCornerSwiftUITests.xctest */;
+			name = JMRoundedCornerDemo;
+			productName = JMRoundedCornerDemo;
+			productReference = 88D93FB91CBAA34E00FFC981 /* JMRoundedCornerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88D93FCB1CBAA34E00FFC981 /* JMRoundedCornerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D93FE51CBAA34E00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerDemoTests" */;
+			buildPhases = (
+				88D93FC81CBAA34E00FFC981 /* Sources */,
+				88D93FC91CBAA34E00FFC981 /* Frameworks */,
+				88D93FCA1CBAA34E00FFC981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88D93FCE1CBAA34E00FFC981 /* PBXTargetDependency */,
+			);
+			name = JMRoundedCornerDemoTests;
+			productName = JMRoundedCornerDemoTests;
+			productReference = 88D93FCC1CBAA34E00FFC981 /* JMRoundedCornerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88D93FD61CBAA34E00FFC981 /* JMRoundedCornerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D93FE61CBAA34E00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerDemoUITests" */;
+			buildPhases = (
+				88D93FD31CBAA34E00FFC981 /* Sources */,
+				88D93FD41CBAA34E00FFC981 /* Frameworks */,
+				88D93FD51CBAA34E00FFC981 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88D93FD91CBAA34E00FFC981 /* PBXTargetDependency */,
+			);
+			name = JMRoundedCornerDemoUITests;
+			productName = JMRoundedCornerDemoUITests;
+			productReference = 88D93FD71CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		881444241CB358FE00F174DD /* Project object */ = {
+		88D93F451CBA5D1C00FFC981 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = JM;
 				TargetAttributes = {
-					8814442B1CB358FE00F174DD = {
+					88D93F4D1CBA5D1C00FFC981 = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					8814443F1CB358FE00F174DD = {
+					88D93F571CBA5D1C00FFC981 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 8814442B1CB358FE00F174DD;
 					};
-					8814444A1CB358FE00F174DD = {
+					88D93FB81CBAA34E00FFC981 = {
 						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 8814442B1CB358FE00F174DD;
+					};
+					88D93FCB1CBAA34E00FFC981 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 88D93FB81CBAA34E00FFC981;
+					};
+					88D93FD61CBAA34E00FFC981 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 88D93FB81CBAA34E00FFC981;
 					};
 				};
 			};
-			buildConfigurationList = 881444271CB358FE00F174DD /* Build configuration list for PBXProject "JMRoundedCornerSwift" */;
+			buildConfigurationList = 88D93F481CBA5D1C00FFC981 /* Build configuration list for PBXProject "JMRoundedCornerSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -289,39 +384,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 881444231CB358FE00F174DD;
-			productRefGroup = 8814442D1CB358FE00F174DD /* Products */;
+			mainGroup = 88D93F441CBA5D1C00FFC981;
+			productRefGroup = 88D93F4F1CBA5D1C00FFC981 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8814442B1CB358FE00F174DD /* JMRoundedCornerSwift */,
-				8814443F1CB358FE00F174DD /* JMRoundedCornerSwiftTests */,
-				8814444A1CB358FE00F174DD /* JMRoundedCornerSwiftUITests */,
+				88D93F4D1CBA5D1C00FFC981 /* JMRoundedCornerSwift */,
+				88D93F571CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests */,
+				88D93FB81CBAA34E00FFC981 /* JMRoundedCornerDemo */,
+				88D93FCB1CBAA34E00FFC981 /* JMRoundedCornerDemoTests */,
+				88D93FD61CBAA34E00FFC981 /* JMRoundedCornerDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8814442A1CB358FE00F174DD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88CC6F711CB3BA0E0009C91F /* avatar.jpg in Resources */,
-				8814443A1CB358FE00F174DD /* LaunchScreen.storyboard in Resources */,
-				881444371CB358FE00F174DD /* Assets.xcassets in Resources */,
-				883D26391CB63D1A0086A211 /* Info.plist in Resources */,
-				881444351CB358FE00F174DD /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8814443E1CB358FE00F174DD /* Resources */ = {
+		88D93F4C1CBA5D1C00FFC981 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		881444491CB358FE00F174DD /* Resources */ = {
+		88D93F561CBA5D1C00FFC981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D93FB71CBAA34E00FFC981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D940091CBAA51300FFC981 /* Info.plist in Resources */,
+				88D940321CBAA6C000FFC981 /* avatar.jpg in Resources */,
+				88D93FC61CBAA34E00FFC981 /* LaunchScreen.storyboard in Resources */,
+				88D93FC31CBAA34E00FFC981 /* Assets.xcassets in Resources */,
+				88D93FC11CBAA34E00FFC981 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D93FCA1CBAA34E00FFC981 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D93FD51CBAA34E00FFC981 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,75 +442,95 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		881444281CB358FE00F174DD /* Sources */ = {
+		88D93F491CBA5D1C00FFC981 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883D263A1CB63D1A0086A211 /* LayoutConstraint.swift in Sources */,
-				881444601CB3618E00F174DD /* JMRoundedCorner.swift in Sources */,
-				883D263F1CB6542D0086A211 /* TestViewController.swift in Sources */,
-				883D26421CB660E50086A211 /* UIControl+YYAdd.m in Sources */,
-				883D26211CB63A2D0086A211 /* ViewController2.swift in Sources */,
-				883D26381CB63D1A0086A211 /* EdgeInsets.swift in Sources */,
-				883D26351CB63D1A0086A211 /* ConstraintMaker.swift in Sources */,
-				881444321CB358FE00F174DD /* ViewController.swift in Sources */,
-				883D263B1CB63D1A0086A211 /* SnapKit.swift in Sources */,
-				883D26371CB63D1A0086A211 /* Debugging.swift in Sources */,
-				883D26341CB63D1A0086A211 /* ConstraintItem.swift in Sources */,
-				883D26321CB63D1A0086A211 /* ConstraintAttributes.swift in Sources */,
-				883D26361CB63D1A0086A211 /* ConstraintRelation.swift in Sources */,
-				883D263D1CB63D1A0086A211 /* ViewController+SnapKit.swift in Sources */,
-				883D263C1CB63D1A0086A211 /* View+SnapKit.swift in Sources */,
-				883D26311CB63D1A0086A211 /* Constraint.swift in Sources */,
-				883D26331CB63D1A0086A211 /* ConstraintDescription.swift in Sources */,
-				881444301CB358FE00F174DD /* AppDelegate.swift in Sources */,
+				88D93F691CBA5D4C00FFC981 /* JMRoundedCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8814443C1CB358FE00F174DD /* Sources */ = {
+		88D93F541CBA5D1C00FFC981 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881444451CB358FE00F174DD /* JMRoundedCornerSwiftTests.swift in Sources */,
+				88D93F5E1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		881444471CB358FE00F174DD /* Sources */ = {
+		88D93FB51CBAA34E00FFC981 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881444501CB358FE00F174DD /* JMRoundedCornerSwiftUITests.swift in Sources */,
+				88D940081CBAA51300FFC981 /* EdgeInsets.swift in Sources */,
+				88D940011CBAA51300FFC981 /* Constraint.swift in Sources */,
+				88D940051CBAA51300FFC981 /* ConstraintMaker.swift in Sources */,
+				88D940061CBAA51300FFC981 /* ConstraintRelation.swift in Sources */,
+				88D93FF11CBAA3A400FFC981 /* ViewController2.swift in Sources */,
+				88D940021CBAA51300FFC981 /* ConstraintAttributes.swift in Sources */,
+				88D93FEF1CBAA3A400FFC981 /* UIControl+YYAdd.m in Sources */,
+				88D9400B1CBAA51300FFC981 /* SnapKit.swift in Sources */,
+				88D93FEE1CBAA3A400FFC981 /* TestViewController.swift in Sources */,
+				88D93FF01CBAA3A400FFC981 /* ViewController.swift in Sources */,
+				88D93FBC1CBAA34E00FFC981 /* AppDelegate.swift in Sources */,
+				88D940031CBAA51300FFC981 /* ConstraintDescription.swift in Sources */,
+				88D940071CBAA51300FFC981 /* Debugging.swift in Sources */,
+				88D9400C1CBAA51300FFC981 /* View+SnapKit.swift in Sources */,
+				88D9400A1CBAA51300FFC981 /* LayoutConstraint.swift in Sources */,
+				88D940041CBAA51300FFC981 /* ConstraintItem.swift in Sources */,
+				88D9400D1CBAA51300FFC981 /* ViewController+SnapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D93FC81CBAA34E00FFC981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D93FD11CBAA34E00FFC981 /* JMRoundedCornerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D93FD31CBAA34E00FFC981 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D93FDC1CBAA34E00FFC981 /* JMRoundedCornerDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		881444421CB358FE00F174DD /* PBXTargetDependency */ = {
+		88D93F5B1CBA5D1C00FFC981 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8814442B1CB358FE00F174DD /* JMRoundedCornerSwift */;
-			targetProxy = 881444411CB358FE00F174DD /* PBXContainerItemProxy */;
+			target = 88D93F4D1CBA5D1C00FFC981 /* JMRoundedCornerSwift */;
+			targetProxy = 88D93F5A1CBA5D1C00FFC981 /* PBXContainerItemProxy */;
 		};
-		8814444D1CB358FE00F174DD /* PBXTargetDependency */ = {
+		88D93FCE1CBAA34E00FFC981 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8814442B1CB358FE00F174DD /* JMRoundedCornerSwift */;
-			targetProxy = 8814444C1CB358FE00F174DD /* PBXContainerItemProxy */;
+			target = 88D93FB81CBAA34E00FFC981 /* JMRoundedCornerDemo */;
+			targetProxy = 88D93FCD1CBAA34E00FFC981 /* PBXContainerItemProxy */;
+		};
+		88D93FD91CBAA34E00FFC981 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88D93FB81CBAA34E00FFC981 /* JMRoundedCornerDemo */;
+			targetProxy = 88D93FD81CBAA34E00FFC981 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		881444331CB358FE00F174DD /* Main.storyboard */ = {
+		88D93FBF1CBAA34E00FFC981 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				881444341CB358FE00F174DD /* Base */,
+				88D93FC01CBAA34E00FFC981 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		881444381CB358FE00F174DD /* LaunchScreen.storyboard */ = {
+		88D93FC41CBAA34E00FFC981 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				881444391CB358FE00F174DD /* Base */,
+				88D93FC51CBAA34E00FFC981 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -407,7 +538,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		881444521CB358FE00F174DD /* Debug */ = {
+		88D93F601CBA5D1C00FFC981 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -427,6 +558,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -449,10 +581,13 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		881444531CB358FE00F174DD /* Release */ = {
+		88D93F611CBA5D1C00FFC981 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -472,6 +607,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -486,120 +622,201 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		881444551CB358FE00F174DD /* Debug */ = {
+		88D93F631CBA5D1C00FFC981 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JMRoundedCornerSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JMRoundedCornerSwift/Bridging-Header.h";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		881444561CB358FE00F174DD /* Release */ = {
+		88D93F641CBA5D1C00FFC981 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = JMRoundedCornerSwift/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "JMRoundedCornerSwift/Bridging-Header.h";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		881444581CB358FE00F174DD /* Debug */ = {
+		88D93F661CBA5D1C00FFC981 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JMRoundedCornerSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMRoundedCornerSwift.app/JMRoundedCornerSwift";
 			};
 			name = Debug;
 		};
-		881444591CB358FE00F174DD /* Release */ = {
+		88D93F671CBA5D1C00FFC981 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JMRoundedCornerSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMRoundedCornerSwift.app/JMRoundedCornerSwift";
 			};
 			name = Release;
 		};
-		8814445B1CB358FE00F174DD /* Debug */ = {
+		88D93FDE1CBAA34E00FFC981 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JMRoundedCornerSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwiftUITests;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = JMRoundedCornerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = JMRoundedCornerSwift;
+				SWIFT_OBJC_BRIDGING_HEADER = "JMRoundedCornerDemo/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		8814445C1CB358FE00F174DD /* Release */ = {
+		88D93FDF1CBAA34E00FFC981 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JMRoundedCornerSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerSwiftUITests;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = JMRoundedCornerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = JMRoundedCornerSwift;
+				SWIFT_OBJC_BRIDGING_HEADER = "JMRoundedCornerDemo/Bridging-Header.h";
+			};
+			name = Release;
+		};
+		88D93FE01CBAA34E00FFC981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JMRoundedCornerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMRoundedCornerDemo.app/JMRoundedCornerDemo";
+			};
+			name = Debug;
+		};
+		88D93FE11CBAA34E00FFC981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JMRoundedCornerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMRoundedCornerDemo.app/JMRoundedCornerDemo";
+			};
+			name = Release;
+		};
+		88D93FE21CBAA34E00FFC981 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JMRoundedCornerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_TARGET_NAME = JMRoundedCornerDemo;
+			};
+			name = Debug;
+		};
+		88D93FE31CBAA34E00FFC981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JMRoundedCornerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TEST_TARGET_NAME = JMRoundedCornerDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		881444271CB358FE00F174DD /* Build configuration list for PBXProject "JMRoundedCornerSwift" */ = {
+		88D93F481CBA5D1C00FFC981 /* Build configuration list for PBXProject "JMRoundedCornerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				881444521CB358FE00F174DD /* Debug */,
-				881444531CB358FE00F174DD /* Release */,
+				88D93F601CBA5D1C00FFC981 /* Debug */,
+				88D93F611CBA5D1C00FFC981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		881444541CB358FE00F174DD /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwift" */ = {
+		88D93F621CBA5D1C00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				881444551CB358FE00F174DD /* Debug */,
-				881444561CB358FE00F174DD /* Release */,
+				88D93F631CBA5D1C00FFC981 /* Debug */,
+				88D93F641CBA5D1C00FFC981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		881444571CB358FE00F174DD /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwiftTests" */ = {
+		88D93F651CBA5D1C00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				881444581CB358FE00F174DD /* Debug */,
-				881444591CB358FE00F174DD /* Release */,
+				88D93F661CBA5D1C00FFC981 /* Debug */,
+				88D93F671CBA5D1C00FFC981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8814445A1CB358FE00F174DD /* Build configuration list for PBXNativeTarget "JMRoundedCornerSwiftUITests" */ = {
+		88D93FE41CBAA34E00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8814445B1CB358FE00F174DD /* Debug */,
-				8814445C1CB358FE00F174DD /* Release */,
+				88D93FDE1CBAA34E00FFC981 /* Debug */,
+				88D93FDF1CBAA34E00FFC981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88D93FE51CBAA34E00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D93FE01CBAA34E00FFC981 /* Debug */,
+				88D93FE11CBAA34E00FFC981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88D93FE61CBAA34E00FFC981 /* Build configuration list for PBXNativeTarget "JMRoundedCornerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D93FE21CBAA34E00FFC981 /* Debug */,
+				88D93FE31CBAA34E00FFC981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 881444241CB358FE00F174DD /* Project object */;
+	rootObject = 88D93F451CBA5D1C00FFC981 /* Project object */;
 }

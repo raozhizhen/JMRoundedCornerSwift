@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JMRoundedCornerSwift"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.license = 'MIT'
   s.summary      = "UIView set Corner Radius"
   s.homepage     = "https://github.com/raozhizhen/JMRoundedCornerSwift.git"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { "raozhizhen" => "raozhizhen@gmail.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/raozhizhen/JMRoundedCornerSwift.git", :tag => s.version }
-  s.source_files = 'JMRoundedCorner/*.swift'
+  s.source_files = 'JMRoundedCornerSwift/*.swift'
   s.requires_arc = true
 
 end

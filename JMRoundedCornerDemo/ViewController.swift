@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JMRoundedCornerSwift
 
 class ViewController: UIViewController, UITableViewDataSource {
     

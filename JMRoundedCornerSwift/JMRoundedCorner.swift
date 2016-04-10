@@ -8,19 +8,19 @@
 
 import UIKit
 
-struct JMRadius {
+public struct JMRadius {
     var topLeftRadius: CGFloat
     var topRightRadius: CGFloat
     var bottomLeftRadius: CGFloat
     var bottomRightRadius: CGFloat
 }
 
-func JMRadiusMake(topLeftRadius: CGFloat, _ topRightRadius: CGFloat, _ bottomLeftRadius: CGFloat, _ bottomRightRadius: CGFloat) -> JMRadius {
+public func JMRadiusMake(topLeftRadius: CGFloat, _ topRightRadius: CGFloat, _ bottomLeftRadius: CGFloat, _ bottomRightRadius: CGFloat) -> JMRadius {
     
     return JMRadius(topLeftRadius: topLeftRadius, topRightRadius: topRightRadius,bottomLeftRadius: bottomLeftRadius,bottomRightRadius: bottomRightRadius)
 }
 
-extension UIView {
+public extension UIView {
     /**给view设置一个 .ScaleAspectFill 模式的圆角背景图*/
     func radiusWith(radius: CGFloat, backgroundImage: UIImage?) {
         radiusWith(radius, borderColor: nil, borderWidth: 0, backgroundColor: nil, backgroundImage: backgroundImage, contentMode: .ScaleAspectFill)
@@ -53,7 +53,7 @@ extension UIView {
 }
 
 extension UIView {
-    func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode) {
+    public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode) {
         //什么叫扭曲，下面就叫扭曲，可是我实在不知道如何实现，先这样吧
         let radiusRect = CGRectMake(radius.topLeftRadius, radius.topRightRadius, radius.bottomLeftRadius, radius.bottomRightRadius)
         let radiusValue = NSValue.init(CGRect: radiusRect)
@@ -82,7 +82,8 @@ extension UIView {
         jm_setRadiusWith(radius, borderColor: dic["borderColor"] as? UIColor, borderWidth: dic["borderWidth"] as! CGFloat, backgroundColor: dic["backgroundColor"] as? UIColor,  backgroundImage: dic["backgroundImage"] as? UIImage, contentMode: contentMode!, size: bounds.size)
     }
 
-    func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode, size: CGSize) {
+    /**JMRoundedCorner 没有难道 size 时候调的方法*/
+    public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode, size: CGSize) {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             

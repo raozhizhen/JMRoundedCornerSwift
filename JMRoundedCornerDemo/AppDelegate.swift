@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  JMRoundedCornerSwift
+//  JMRoundedCornerDemo
 //
-//  Created by jm on 16/4/5.
+//  Created by jm on 16/4/10.
 //  Copyright © 2016年 JM. All rights reserved.
 //
 

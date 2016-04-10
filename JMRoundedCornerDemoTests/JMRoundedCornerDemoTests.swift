@@ -1,15 +1,15 @@
 //
-//  JMRoundedCornerSwiftTests.swift
-//  JMRoundedCornerSwiftTests
+//  JMRoundedCornerDemoTests.swift
+//  JMRoundedCornerDemoTests
 //
 //  Created by jm on 16/4/10.
 //  Copyright © 2016年 JM. All rights reserved.
 //
 
 import XCTest
-@testable import JMRoundedCornerSwift
+//@testable import JMRoundedCornerDemo
 
-class JMRoundedCornerSwiftTests: XCTestCase {
+class JMRoundedCornerDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
