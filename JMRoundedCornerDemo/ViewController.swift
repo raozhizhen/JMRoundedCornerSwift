@@ -78,6 +78,7 @@ class TableViewCell: UITableViewCell {
         contentView.backgroundColor = UIColor.lightGrayColor()
         let avatarView = UIImageView.init(frame: CGRectMake(10, 7, 40, 40))
         avatarView.jm_setRadiusWith(JMRadiusMake(20, 20, 20, 20), borderColor: nil, borderWidth: 0.0, backgroundColor: nil, backgroundImage: UIImage.init(named: "avatar.jpg"), contentMode: .ScaleAspectFill)
+        avatarView.radiusWith(20, backgroundImage: UIImage.init(named: "avatar.jpg"))
         contentView.addSubview(avatarView)
         
         let viewWidth = (UIScreen.mainScreen().bounds.size.width - 78) / 3
