@@ -8,6 +8,8 @@
 
 import UIKit
 
+let jm_operationQueue = NSOperationQueue()
+
 public struct JMRadius {
     var topLeftRadius: CGFloat
     var topRightRadius: CGFloat
@@ -21,6 +23,7 @@ public func JMRadiusMake(topLeftRadius: CGFloat, _ topRightRadius: CGFloat, _ bo
 }
 
 public extension UIView {
+
     /**给view设置一个 .ScaleAspectFill 模式的圆角背景图*/
     func radiusWith(radius: CGFloat, backgroundImage: UIImage?) {
         radiusWith(radius, borderColor: nil, borderWidth: 0, backgroundColor: nil, backgroundImage: backgroundImage, contentMode: .ScaleAspectFill)
@@ -53,46 +56,48 @@ public extension UIView {
 }
 
 extension UIView {
-    public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode) {
-        //什么叫扭曲，下面就叫扭曲，可是我实在不知道如何实现，先这样吧
-        let radiusRect = CGRectMake(radius.topLeftRadius, radius.topRightRadius, radius.bottomLeftRadius, radius.bottomRightRadius)
-        let radiusValue = NSValue.init(CGRect: radiusRect)
-        var dic: Dictionary<String, NSObject> = [: ]
-        dic["radius"] = radiusValue
-        dic["borderColor"] = borderColor
-        dic["borderWidth"] = borderWidth
-        dic["backgroundColor"] = backgroundColor
-        dic["backgroundImage"] = backgroundImage
-        dic["contentMode"] = contentMode.rawValue
-        
-        setNeedsLayout()
-        performSelector(#selector(setRadius(_:)), withObject: dic, afterDelay: 0, inModes: [NSRunLoopCommonModes])
+    
+    private struct AssociatedKeys {
+        static var jm_operationKey = "jm_operation"
     }
     
-    func setRadius(dic: Dictionary<String, NSObject>) {
-        
-        if bounds.size.width == 0 || bounds.size.width == 0 {
-            print("JMRoundedCorner 可能受到某些邪恶力量的影响，没有在布局之后拿到 view 的 size （暂时也就一个使用者出现过，如果你也出现了，非常欢迎你联系我，我好看看是什么原因），可以调用方法，- jm_setJMRadius: withBorderColor: borderWidth: backgroundColor: backgroundImage: contentMode: size: 方法给 JMRoundedCorner 提供 size")
-            return
+    var operation: NSOperation? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.jm_operationKey) as? NSOperation
         }
-        let radiusRect = (dic["radius"] as! NSValue).CGRectValue()
-        let radius = JMRadiusMake(radiusRect.origin.x, radiusRect.origin.y, radiusRect.width, radiusRect.height)
-        let contentMode = UIViewContentMode.init(rawValue: dic["contentMode"] as! Int)
-        
-        jm_setRadiusWith(radius, borderColor: dic["borderColor"] as? UIColor, borderWidth: dic["borderWidth"] as! CGFloat, backgroundColor: dic["backgroundColor"] as? UIColor,  backgroundImage: dic["backgroundImage"] as? UIImage, contentMode: contentMode!, size: bounds.size)
+        set {
+            objc_setAssociatedObject(self, &AssociatedKeys.jm_operationKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
     }
-
-    /**JMRoundedCorner 没有难道 size 时候调的方法*/
+    
+    func jm_cancelOperation() -> Void {
+        let operation = self.operation
+        operation?.cancel()
+        self.operation = nil
+    }
+    
+    public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode) {
+        self.jm_cancelOperation()
+        
+        self .jm_setRadiusWith(radius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor, backgroundImage: backgroundImage, contentMode: contentMode, size: CGSizeZero)
+    }
+    
     public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode, size: CGSize) {
         
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
-            
-            let size2 = CGSizeMake(pixel(size.width), pixel(size.height))
-            let image = UIImage.jm_setRadiusWith(size2, radius: radius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor, backgroundImage: backgroundImage, contentMode: contentMode)
-            
-            dispatch_async(dispatch_get_main_queue(), {
-                
-                self.frame = CGRectMake(pixel(self.frame.origin.x), pixel(self.frame.origin.y), size2.width, size2.height)
+        var _size = size
+        
+        let blockOperation = NSBlockOperation  { 
+            if ((self.operation?.cancel()) != nil) {
+                if(CGSizeEqualToSize(_size, CGSizeZero)) {
+                    dispatch_sync(dispatch_get_main_queue(), {
+                        _size = self.bounds.size
+                    })
+                }
+            }
+            _size = CGSizeMake(pixel(_size.width), pixel(_size.height))
+            let image = UIImage.jm_setRadiusWith(_size, radius: radius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor, backgroundImage: backgroundImage, contentMode: contentMode)
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                self.frame = CGRectMake(pixel(self.frame.origin.x), pixel(self.frame.origin.y), _size.width, _size.height)
                 if self is UIImageView {
                     (self as! UIImageView).image = image
                 } else if self is UIButton && backgroundImage != nil {
@@ -102,8 +107,10 @@ extension UIView {
                 } else {
                     self.layer.contents = image.CGImage
                 }
-            })
+            }
         }
+        self.operation = blockOperation
+        jm_operationQueue.addOperation(blockOperation)
     }
 }
 

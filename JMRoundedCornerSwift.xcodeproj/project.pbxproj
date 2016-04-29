@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88057A171CBE215D002CE4C8 /* JMRoundedCornerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D93F4E1CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		88D93F521CBA5D1C00FFC981 /* JMRoundedCornerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D93F511CBA5D1C00FFC981 /* JMRoundedCornerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88D93F591CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D93F4E1CBA5D1C00FFC981 /* JMRoundedCornerSwift.framework */; };
 		88D93F5E1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D93F5D1CBA5D1C00FFC981 /* JMRoundedCornerSwiftTests.swift */; };
@@ -123,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88057A171CBE215D002CE4C8 /* JMRoundedCornerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = JMRoundedCornerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemo;
@@ -703,6 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = JMRoundedCornerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocoa.JMRoundedCornerDemo;
