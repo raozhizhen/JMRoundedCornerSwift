@@ -79,7 +79,7 @@ extension UIView {
     public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode) {
         self.jm_cancelOperation()
         
-        self .jm_setRadiusWith(radius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor, backgroundImage: backgroundImage, contentMode: contentMode, size: CGSizeZero)
+        self.jm_setRadiusWith(radius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor, backgroundImage: backgroundImage, contentMode: contentMode, size: CGSizeZero)
     }
     
     public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode, size: CGSize) {
@@ -101,7 +101,7 @@ extension UIView {
                 if self is UIImageView {
                     (self as! UIImageView).image = image
                 } else if self is UIButton && backgroundImage != nil {
-                    (self as! UIButton) .setBackgroundImage(image, forState: .Normal)
+                    (self as! UIButton).setBackgroundImage(image, forState: .Normal)
                 } else if self is UILabel {
                     self.layer.backgroundColor = UIColor.init(patternImage: image).CGColor
                 } else {
@@ -122,7 +122,7 @@ private func pixel(num: CGFloat) -> CGFloat {
 }
 
 extension UIImage {
-    //类型方法，同 OC 的类方法
+    
     static func jm_setRadiusWith(size: CGSize, radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode) -> UIImage {
         var backgroundColor = backgroundColor
         if var image = backgroundImage {
@@ -243,6 +243,7 @@ extension UIImage {
     }
 }
 
+//根据半径优先级算出新的JMRadius
 private func transformationJMRadius(radius: JMRadius, size: CGSize, borderWidth: CGFloat) -> JMRadius{
     
     var radius = radius
