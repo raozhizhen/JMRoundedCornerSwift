@@ -85,27 +85,27 @@ extension UIView {
     public func jm_setRadiusWith(radius: JMRadius, borderColor: UIColor?, borderWidth: CGFloat, backgroundColor: UIColor?, backgroundImage: UIImage?, contentMode: UIViewContentMode, size: CGSize) {
         
         var _size = size
-        
-        let blockOperation = NSBlockOperation  { 
-            if ((self.operation?.cancel()) != nil) {
+        weak var wself = self
+        let blockOperation = NSBlockOperation  {
+            if ((wself!.operation?.cancel()) != nil) {
                 if(CGSizeEqualToSize(_size, CGSizeZero)) {
                     dispatch_sync(dispatch_get_main_queue(), {
-                        _size = self.bounds.size
+                        _size = wself!.bounds.size
                     })
                 }
             }
             _size = CGSizeMake(pixel(_size.width), pixel(_size.height))
             let image = UIImage.jm_setRadiusWith(_size, radius: radius, borderColor: borderColor, borderWidth: borderWidth, backgroundColor: backgroundColor, backgroundImage: backgroundImage, contentMode: contentMode)
             NSOperationQueue.mainQueue().addOperationWithBlock {
-                self.frame = CGRectMake(pixel(self.frame.origin.x), pixel(self.frame.origin.y), _size.width, _size.height)
-                if self is UIImageView {
-                    (self as! UIImageView).image = image
-                } else if self is UIButton && backgroundImage != nil {
-                    (self as! UIButton).setBackgroundImage(image, forState: .Normal)
-                } else if self is UILabel {
-                    self.layer.backgroundColor = UIColor.init(patternImage: image).CGColor
+                wself!.frame = CGRectMake(pixel(wself!.frame.origin.x), pixel(wself!.frame.origin.y), _size.width, _size.height)
+                if wself is UIImageView {
+                    (wself as! UIImageView).image = image
+                } else if wself is UIButton && backgroundImage != nil {
+                    (wself as! UIButton).setBackgroundImage(image, forState: .Normal)
+                } else if wself is UILabel {
+                    wself!.layer.backgroundColor = UIColor.init(patternImage: image).CGColor
                 } else {
-                    self.layer.contents = image.CGImage
+                    wself!.layer.contents = image.CGImage
                 }
             }
         }

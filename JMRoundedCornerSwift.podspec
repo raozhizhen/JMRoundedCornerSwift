@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JMRoundedCornerSwift"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.license = 'MIT'
   s.summary      = "UIView set Corner Radius"
   s.homepage     = "https://github.com/raozhizhen/JMRoundedCornerSwift.git"
